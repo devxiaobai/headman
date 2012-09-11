@@ -1,0 +1,20 @@
+/**
+	 * 设置图片浏览的清晰度 使用 camera.setParameters(parameters);
+	 */
+	public Parameters setPicQuality (int quality){
+	       Camera camera = Camera.open();
+	       Camera.Parameters parameters = camera.getParameters();
+	       /* 设置预览照片的大小，此处设置为全屏 */
+	       WindowManager wm = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE); 
+	       Display display = wm.getDefaultDisplay();                                      // 获取屏幕信息的描述类
+	       parameters.setPreviewSize(display.getWidth(), display.getHeight());          // 设置
+	       /* 每秒从摄像头捕获5 帧画面， */
+	       parameters.setPreviewFrameRate(5);
+	       /* 设置照片的输出格式:jpg */
+	       parameters.setPictureFormat(PixelFormat.JPEG);
+	       /* 照片质量 */
+	       parameters.set("jpeg-quality", quality);
+	       /* 设置照片的大小：此处照片大小等于屏幕大小 */
+	       parameters.setPictureSize(display.getWidth(), display.getHeight());
+	       return  parameters;
+	}

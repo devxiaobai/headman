@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+﻿ <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@drawable/pf_ic_common_normal"/>
+    <item android:state_pressed="true" android:drawable="@drawable/pf_bottom_pop_back" />
+    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/pf_bottom_pop_back" />
+    <item android:state_enabled="true" android:drawable="@drawable/pf_ic_common_normal" />
+    <item android:drawable="@drawable/pf_ic_common_normal" />
+</selector>
