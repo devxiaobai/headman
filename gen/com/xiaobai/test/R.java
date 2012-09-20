@@ -9,6 +9,11 @@ package com.xiaobai.test;
 
 public final class R {
     public static final class attr {
+        /**  Style of the tab indicator's tabs. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int TabPageIndicatorStyle=0x7f010000;
     }
     public static final class color {
         /**  蜜色 
@@ -475,19 +480,42 @@ public final class R {
         public static final int picture_add=0x7f020009;
     }
     public static final class id {
-        public static final int deleteLayout=0x7f070003;
-        public static final int desktop_news_count_bg=0x7f070000;
-        public static final int grid_delete_image=0x7f070004;
-        public static final int grid_item_image=0x7f070001;
-        public static final int grid_item_label=0x7f070002;
-        public static final int gridlayout=0x7f070006;
-        public static final int myGrid=0x7f070007;
-        public static final int pf_main_bottom_fragment=0x7f070005;
+        public static final int Button01=0x7f07000d;
+        public static final int Button02=0x7f07000e;
+        public static final int Button03=0x7f07000f;
+        public static final int Button04=0x7f070010;
+        public static final int Button05=0x7f070011;
+        public static final int Button06=0x7f070012;
+        public static final int Button07=0x7f070013;
+        public static final int Button08=0x7f070014;
+        public static final int LinearLayout02=0x7f07000c;
+        public static final int deleteLayout=0x7f070007;
+        public static final int desktop_news_count_bg=0x7f070004;
+        public static final int empty_fragment_txt=0x7f070017;
+        public static final int grid_delete_image=0x7f070008;
+        public static final int grid_item_image=0x7f070005;
+        public static final int grid_item_label=0x7f070006;
+        public static final int gridlayout=0x7f07000a;
+        public static final int headMan=0x7f070000;
+        public static final int lyt_swfrag_root=0x7f070016;
+        public static final int main_feedlist=0x7f070003;
+        public static final int main_pager=0x7f070019;
+        public static final int mainfragment_container=0x7f070015;
+        public static final int mainpage_indicator=0x7f070018;
+        public static final int myGrid=0x7f07000b;
+        public static final int pf_main_bottom_fragment=0x7f070009;
+        public static final int scroll=0x7f070001;
+        public static final int viewpageBtn=0x7f070002;
     }
     public static final class layout {
-        public static final int manage_grid_item=0x7f030000;
-        public static final int management=0x7f030001;
-        public static final int management_fra=0x7f030002;
+        public static final int demo=0x7f030000;
+        public static final int manage_grid_item=0x7f030001;
+        public static final int management=0x7f030002;
+        public static final int management_fra=0x7f030003;
+        public static final int scroll_view=0x7f030004;
+        public static final int view_page_act=0x7f030005;
+        public static final int view_page_empity_fra=0x7f030006;
+        public static final int view_page_fra=0x7f030007;
     }
     public static final class string {
         public static final int app_name=0x7f050001;
@@ -498,4 +526,31 @@ public final class R {
         public static final int pf_radio_styles=0x7f060000;
         public static final int text_subject_style=0x7f060002;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ViewPagerIndicator.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ViewPagerIndicator_TabPageIndicatorStyle com.xiaobai.test:TabPageIndicatorStyle}</code></td><td> Style of the tab indicator's tabs.</td></tr>
+           </table>
+           @see #ViewPagerIndicator_TabPageIndicatorStyle
+         */
+        public static final int[] ViewPagerIndicator = {
+            0x7f010000
+        };
+        /**
+          <p>
+          @attr description
+           Style of the tab indicator's tabs. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:TabPageIndicatorStyle
+        */
+        public static final int ViewPagerIndicator_TabPageIndicatorStyle = 0;
+    };
 }
